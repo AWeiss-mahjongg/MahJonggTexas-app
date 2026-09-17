@@ -14,6 +14,7 @@ import * as Sharing from 'expo-sharing';
 
 import { useColorScheme } from '@/components/useColorScheme';
 import Colors from '@/constants/Colors';
+import { LINKS } from '@/constants/links';
 
 function buildSignupBody(name: string, email: string) {
   return [
@@ -50,7 +51,7 @@ export default function JoinScreen() {
     }
     const subject = encodeURIComponent('MahJonggTexas signup');
     const body = encodeURIComponent(buildSignupBody(name, email));
-    await Linking.openURL(`mailto:?subject=${subject}&body=${body}`);
+    await Linking.openURL(`${LINKS.joinMailto}?subject=${subject}&body=${body}`);
   }
 
   async function onShare() {
@@ -87,7 +88,7 @@ export default function JoinScreen() {
     <View style={[styles.screen, { backgroundColor: c.background }]}>
       <Text style={[styles.title, { color: c.text }]}>Join the Community</Text>
       <Text style={[styles.sub, { color: c.muted }]}>
-        No account server — submit opens your email app or share sheet with your details.
+        Signups go to mahjonggtexas@gmail.com via your mail app, or use Share/export.
       </Text>
 
       <Text style={[styles.label, { color: c.text }]}>Name</Text>

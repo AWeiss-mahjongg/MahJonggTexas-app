@@ -5,8 +5,8 @@ export const LINKS = {
   wordSearch:
     'https://www.amazon.com/stores/Apohl-Atelier/author/B0GWLLPSW5?ref=sr_ntt_srch_lnk_1&qid=1789500462&sr=8-1&shoppingPortalEnabled=true&ccs_id=55fce648-e606-4490-a018-c8a9905a5246',
   book: 'https://amzn.to/4fOTn0u',
-  /** No dedicated inbox published — mailto opens with blank To; user fills recipient or shares. */
-  joinMailto: 'mailto:',
+  contactEmail: 'mahjonggtexas@gmail.com',
+  joinMailto: 'mailto:mahjonggtexas@gmail.com',
 } as const;
 
 export const SHOP_ITEMS = [
